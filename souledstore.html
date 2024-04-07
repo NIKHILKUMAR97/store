@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    
+    }
+    .navbar{
+        height: 45px;
+        background-color: #e11b23;
+        display: flex;
+    }
+    .logo{
+        margin: 0px 16px 0px 35px;
+        padding: 25px 0px;
+    }
+    .logo img{
+        height: 90px;
+        width: 160px;
+    }
+    li a{
+        text-decoration: none;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        padding: 12px 20px;
+        border: 1px solid ;
+        
+
+        
+    }
+   
+    .content{
+        display: flex;
+        list-style-type: none;
+        align-items: center;       
+        
+    }
+    
+    .rt-content{
+        display: flex;
+        list-style-type: none;
+        align-items: center; 
+        padding: 0px 0px 0px 290px;  
+    }
+    .rt-content p{
+        text-transform: uppercase;
+        font-size: 14px;
+        padding: 0 0 0 25px;
+        color: #fff;
+    }
+.panal{
+    height: 70px;
+    /* background-color: aqua; */
+    margin: 0px 0px 10px 0px;
+    padding: 30px 200px;
+    
+    
+}
+.pan-link{
+    display: flex;
+    gap: 10px;
+    
+}
+.pan-link p{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+.icons{
+    display: flex;
+    font-size: 23px;
+    
+    padding: 1px 2px 1px 25px;
+    gap: 15px;
+}
+.search-box{
+            border: none;
+            border-bottom: 1px solid #aaa;
+            background: transparent; 
+             outline: none; 
+            height: 30px;
+            color: #fff;
+            width: 50px;
+            text-transform: capitalize;
+            font-size: 16px;
+            font-weight: 800;
+            transition: 0.5s;
+        }
+        .search-box:focus{
+            width: 80px;
+            border-color: rgb(43, 37, 36);
+        }
+h1{
+    margin: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+.cbox{
+    display: flex;
+    gap: 20px;
+}
+.cbox1{
+    display: flex;
+    gap: 15px;
+}
+.cbox2{
+    display: flex;
+    gap: 15px;
+}
+.cbox3{
+    display: flex;
+    gap: 15px;
+}
+.lbox{
+    display: flex;
+    gap: 25px;
+}
+.lcbox{
+    display: flex;
+    gap: 25px;
+}
+.sfbox{
+    display: flex;
+    gap: 25px;
+}
+.tsbox{
+    display: flex;
+    gap: 15px;
+}
+h2{
+    height: 45px;
+        background-color: #e11b23;
+        margin: 30px;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1.5px;
+    font-size: 1.5em;
+
+}
+h3{
+    height: 45px;
+        background-color: #fff;
+        margin: 30px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    letter-spacing: 1.5px;
+    font-size: 2.5em;
+}
+.sfooter{
+    height: 900px;
+    width: 100%;
+    background-color: #e6e7e8;
+    display: flex;
+    justify-content: space-evenly;
+
+   
+
+}
+h5{
+    color: #e11b23;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 8px 0px 10px;
+    
+}
+li{
+    /* color: #58595b; */
+    font-size: 15px;
+    list-style-type: none;
+    font-weight: 900;
+}
+.fbox li{
+    padding: 20px 0px 10px;
+}
+.content2 h6{
+    margin-top: 30px;
+    background-color: #e6e7e8;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 800;
+}
+.content3{
+    background-color: #e6e7e8;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+footer{
+    background-color: #e6e7e8;
+    height: 1150px;
+}
+h5{
+    font-size: 35px;
+    float: right;
+    padding: 25px;
+}
+
+
+</style>
+<body>
+    <header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./souledstore/logo.png" alt="">
+        </div>
+        <div class="content">
+            <li><a href="#">WOMEN</a></li> 
+            <li><a href="#">MEN</a></li>
+            <li><a href="#">KIDS</a></li>
+        </div>
+        <div class="rt-content">
+            <!-- <li><a href="#">track order</a></li>
+            <li><a href="#">contant us</a></li>
+            <li><a href="#"> <i class="fa-solid fa-mobile-screen-button"></i> download app</a></li> -->
+            <p>track order</p>
+            <p>contant us</p>
+            <p><i class="fa-solid fa-mobile-screen-button"></i>  download app</p>
+        
+        </div>
+    </div>
+    <div class="panal">
+    <div class="pan-link">
+        <p>streetwear</p>
+        <p>topwear</p>
+        <p>bootomwear</p>
+        <p>sneakers</p>
+        <p>accessories</p>
+        <p>collection</p>
+        <p>themes</p>
+        <p>memebership</p>
+        <div class="icons">
+            <input type="text" class="search-box" placeholder="search">
+            <div class="glass">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+        <i class="fa-regular fa-user"></i>
+        <i class="fa-regular fa-heart"></i>
+        <i class="fa-solid fa-bag-shopping"></i>
+    </div>
+
+    </div>
+        
+    </div>
+</header>
+<img style="width: 1320px;" src="./souledstore/i2.webp" alt="">
+<h1>categories</h1>
+<div class="cbox">
+    <div class="ibox"><img style="height: 420px; width: 420px;" src="./souledstore/c1.webp" alt=""></div>
+    <div class="ibox"><img style="height: 420px; width: 420px;" src="./souledstore/c2.webp" alt=""></div>
+    <div class="ibox"><img style="height: 420px; width: 420px;" src="./souledstore/c3.webp" alt=""></div>
+    
+</div>
+<div class="cbox1">
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c4.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c5.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c6.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c7.webp" alt=""></div>
+</div>
+<div class="cbox2">
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c8.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c9.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c10.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c11.webp" alt=""></div>
+    
+</div>
+<div class="cbox3">
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c12.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c13.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c14.webp" alt=""></div>
+    <div class="ibox"><img style="height: 310px; width: 310px;" src="./souledstore/c15.webp" alt=""></div>
+    
+</div>
+<h1>launched today</h1>
+<div class="lbox">
+    <div class="ibox"><img style="height: 400px; width: 300px;" src="./souledstore/l1.webp" alt=""></div>
+    <div class="ibox"><img style="height: 400px; width: 300px;" src="./souledstore/l2.webp" alt=""></div>
+    <div class="ibox"><img style="height: 400px; width: 300px;" src="./souledstore/l3.webp" alt=""></div>
+    <div class="ibox"><img style="height: 400px; width: 300px;" src="./souledstore/l4.webp" alt=""></div>
+    
+</div>
+<h1>latest collection</h1>
+<div class="lcbox">
+    <div class="ibox"><img style="height: 390px; width: 410px;" src="./souledstore/lc1.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 410px;" src="./souledstore/lc2.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 410px;" src="./souledstore/lc3.webp" alt=""></div>
+    
+</div>
+<h1>shop by fandom</h1>
+<div class="sfbox">
+    <div class="ibox"><img style="height: 390px; width: 410px;" src="./souledstore/sf1.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 410px;" src="./souledstore/sf2.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 410px;" src="./souledstore/sf3.webp" alt=""></div>
+</div>
+<h1>top selling</h1>
+<div class="tsbox">
+    <div class="ibox"><img style="height: 390px; width: 310px;" src="./souledstore/ts1.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 310px;" src="./souledstore/ts2.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 310px;" src="./souledstore/ts3.webp" alt=""></div>
+    <div class="ibox"><img style="height: 390px; width: 310px;" src="./souledstore/ts4.webp" alt=""></div>
+</div>
+<h2>home grown indian brand</h2>
+<h3>over <strong>6 millions </strong>  happy customers</h3>
+<footer>
+    <div class="sfooter">
+        <ul class="fbox">
+            <li class="hbox"><h5>need help</h5></li>
+            <li>contact us </li>
+            <li>track us</li>
+            <li>return and refund</li>
+            <li>FAQs</li>
+        </ul>
+        <ul class="fbox">
+            <li class="hbox"><h5>company</h5></li>
+            <li>about us </li>
+            <li>career</li>
+            <li>community initiatives</li>
+            <li>souled army</li>
+        </ul>
+        <ul class="fbox">
+            <li class="hbox"><h5>more info</h5></li>
+            <li>T&C </li>
+            <li>privacy policies</li>
+            <li>site maps</li>
+            
+        </ul>
+        <ul class="fbox">
+            <li class="hbox"><h5>more info</h5></li>
+            <li>Bandra</li>
+<li>Thane</li>
+<li>Colaba</li>
+<li>Palladium</li>
+<li>Malad</li>
+<li>Ghatkopar</li>
+<li>Goregaon</li>
+<li>Pune</li>
+<li>Bangalore</li>
+<li>Indore</li>
+<li>Haryana</li>
+<li>Bhopal</li>
+<li>Surat</li>
+<li>Prayagraj</li>
+<li>Mohali</li>
+<li>Ahmedabad</li>
+        </ul>      
+    </div>
+    
+<div class="content2">
+    <h6><i class="fa-solid fa-mobile-screen-button"></i>experience the souled store app</h6>
+</div>
+<div class="content3">
+    <img src="./souledstore/as.svg" alt=""><img src="./souledstore/gp.svg" alt="">   
+</div>
+<h5 style="color: black;">follow us: <i style="color: rgb(26, 16, 168);" class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i style="color: orangered;" class="fa-brands fa-instagram"></i> </h5>
+   
+   
+   
+</footer>
+
+    
+
+
+    
+</body>
+</html>
